@@ -5,6 +5,7 @@ let quickSort = arr => {
   }
   let pivotIndex = Math.floor(arr.length / 2);
   let pivot = arr.splice(pivotIndex, 1)[0];
+//   上边这句话末尾加了[0]的意思是将arr.splice删去的元素变为一个数字赋值给pivot。
   let left = [];
   let right = [];
   for (let i = 0; i < arr.length; i++) {
